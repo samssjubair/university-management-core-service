@@ -9,6 +9,16 @@
             "date": 1692299607474,
             "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-18-08-01-success.log",
             "hash": "c5eef22fd71f08e16013b78211c09aa0200dc1b680268fc7958021ad8fbd561f"
+        },
+        {
+            "date": 1692336717599,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-18-08-11-success.log",
+            "hash": "8d624c10f225bb4efb92dddaf3d1f04c0ec4ffa98ebf13be70900ce941e893f8"
+        },
+        {
+            "date": 1692338616391,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-18-08-12-success.log",
+            "hash": "c53523a9312818ee0fd55f02caefbf519e31576b82f4f0d4e834f4e9c40a8b48"
         }
     ],
     "hashType": "sha256"
