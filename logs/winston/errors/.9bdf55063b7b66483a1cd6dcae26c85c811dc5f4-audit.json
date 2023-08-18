@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/.9bdf55063b7b66483a1cd6dcae26c85c811dc5f4-audit.json",
+    "files": [
+        {
+            "date": 1692299607475,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-18-08-01-error.log",
+            "hash": "9e412ab789c68d7dd7b9a95bfc70cf8a0a0a4f37ed8c967eb0f5f10364f94c4b"
+        }
+    ],
+    "hashType": "sha256"
+}
