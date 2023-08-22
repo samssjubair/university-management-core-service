@@ -1,5 +1,6 @@
 import { AcademicSemester } from '@prisma/client';
 import { Request, Response } from 'express';
+import httpStatus from 'http-status';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
@@ -42,9 +43,33 @@ const getDataById= catchAsync(async (req: Request,res: Response) =>{
         data: result
     })
 })
+
+const updateOneInDB = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await academicSemesterService.updateOneInDB(id, req.body);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic Semester updated successfully',
+    data: result,
+  });
+});
+
+const deleteByIdFromDB = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await academicSemesterService.deleteByIdFromDB(id);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic Semester delete successfully',
+    data: result,
+  });
+});
  
-export const academicDepartmentController = {
+export const academicSemesterController = {
     insertIntoDB,
     getAllFromDB,
-    getDataById
+    getDataById,
+    updateOneInDB,
+    deleteByIdFromDB
 };
