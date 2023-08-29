@@ -64,6 +64,36 @@
             "date": 1692903644843,
             "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-25-08-01-success.log",
             "hash": "a98b2b9520e7211237af52ca9f82149b64947bbd8bae68cb3a68672ab0a45516"
+        },
+        {
+            "date": 1692947146424,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-25-08-13-success.log",
+            "hash": "22cccdb58ffe71a66c6b0a8ae0c510e1a664c5598273f88b39b7971cb52253b1"
+        },
+        {
+            "date": 1692952899942,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-25-08-14-success.log",
+            "hash": "1c2575dba2c0afb50dc2df3bdf7a1458d87744810a600992b8faf6cabd2c4f8d"
+        },
+        {
+            "date": 1693239122871,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-28-08-22-success.log",
+            "hash": "69addeac7b5c2e2697fdb2bd6276bd5e7fa01dba2ebd334a300af2bd1e7d3b9f"
+        },
+        {
+            "date": 1693321773203,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-29-08-21-success.log",
+            "hash": "5623ead1c998f0e5530ee378d73a21aab136cd252ef304dd9b2cc0c5d7859f60"
+        },
+        {
+            "date": 1693328368264,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-29-08-22-success.log",
+            "hash": "b2ea5505aa6da46f13371710b699dd5e1a5738e394e5a7799b8d40fed0a51c37"
+        },
+        {
+            "date": 1693328404998,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-29-08-23-success.log",
+            "hash": "331430dee9fc6197d23545c2065c92f8c8b713ca187695422e74b68bcad1f1ba"
         }
     ],
     "hashType": "sha256"
