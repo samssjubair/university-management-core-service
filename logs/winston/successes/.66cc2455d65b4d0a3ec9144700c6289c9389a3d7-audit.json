@@ -6,56 +6,6 @@
     "auditLog": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/.66cc2455d65b4d0a3ec9144700c6289c9389a3d7-audit.json",
     "files": [
         {
-            "date": 1692299607474,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-18-08-01-success.log",
-            "hash": "c5eef22fd71f08e16013b78211c09aa0200dc1b680268fc7958021ad8fbd561f"
-        },
-        {
-            "date": 1692336717599,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-18-08-11-success.log",
-            "hash": "8d624c10f225bb4efb92dddaf3d1f04c0ec4ffa98ebf13be70900ce941e893f8"
-        },
-        {
-            "date": 1692338616391,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-18-08-12-success.log",
-            "hash": "c53523a9312818ee0fd55f02caefbf519e31576b82f4f0d4e834f4e9c40a8b48"
-        },
-        {
-            "date": 1692348271437,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-18-08-14-success.log",
-            "hash": "6554a300dfe07f3ca23df3a859bba9b8f06ad95e6ffc0def80a03e459a76567c"
-        },
-        {
-            "date": 1692540725993,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-20-08-20-success.log",
-            "hash": "49dc4a32aebf64ef69c432c23a3765f0ccbc13f42d45927c433de910a05c08f6"
-        },
-        {
-            "date": 1692713149665,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-22-08-20-success.log",
-            "hash": "31a63b2ed0ba1d10d52085e5f0ead5dbac13c46b73d459d9163b37ef80943f22"
-        },
-        {
-            "date": 1692716818833,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-22-08-21-success.log",
-            "hash": "23c0756bed6941dc8ea0cdb81847bc21a28591bdf12f8e96e03766a056f180a2"
-        },
-        {
-            "date": 1692720390257,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-22-08-22-success.log",
-            "hash": "a2a848235259a3eb2bce7593b2e5ac0c066c24362a106e47f01d6679baa5f207"
-        },
-        {
-            "date": 1692727309766,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-23-08-00-success.log",
-            "hash": "fe64a92e863f0c8b9645b976c6293fd970b4265d410c71a40db4447cca917051"
-        },
-        {
-            "date": 1692773044412,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-23-08-12-success.log",
-            "hash": "7027ab59b142cd533a64d1e175dbeee3581f666d002c02eb8c00e22afa090996"
-        },
-        {
             "date": 1692900880477,
             "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-25-08-00-success.log",
             "hash": "a2a2feb630710bceba0d1536d5adc27fdea70757f0a4982afdb0c94cedeb8287"
@@ -94,6 +44,11 @@
             "date": 1693328404998,
             "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-29-08-23-success.log",
             "hash": "331430dee9fc6197d23545c2065c92f8c8b713ca187695422e74b68bcad1f1ba"
+        },
+        {
+            "date": 1694019911333,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/successes/phu-2023-06-09-23-success.log",
+            "hash": "e0f62aa350a705f21e594f3803e67595bd0afeb5e863d101ca0195f40e080d55"
         }
     ],
     "hashType": "sha256"

@@ -6,56 +6,6 @@
     "auditLog": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/.9bdf55063b7b66483a1cd6dcae26c85c811dc5f4-audit.json",
     "files": [
         {
-            "date": 1692299607475,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-18-08-01-error.log",
-            "hash": "9e412ab789c68d7dd7b9a95bfc70cf8a0a0a4f37ed8c967eb0f5f10364f94c4b"
-        },
-        {
-            "date": 1692336717864,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-18-08-11-error.log",
-            "hash": "90d27ce24270d1c1b7ffedc66eb8e22e6b6448deea0d7a38f921b44bce673ef8"
-        },
-        {
-            "date": 1692338616652,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-18-08-12-error.log",
-            "hash": "43b9dc053362ebf65e3ad0d7ebbee0063052f2b5b6ae9e2ce22b48d5c606748c"
-        },
-        {
-            "date": 1692348271733,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-18-08-14-error.log",
-            "hash": "ff03e47629b88bab9d9a78378703af72c2da32da0d74cfcc3c741d0a856f28a3"
-        },
-        {
-            "date": 1692540725996,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-20-08-20-error.log",
-            "hash": "a8c78d80a8af8ca6b9c0ab7401de498a4a51f9c277a368a035ee54987d15c0bf"
-        },
-        {
-            "date": 1692713149667,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-22-08-20-error.log",
-            "hash": "c599ca1131593bda878652463e7f45de5a9c65aed559274c295e9175d7832837"
-        },
-        {
-            "date": 1692716819279,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-22-08-21-error.log",
-            "hash": "12e7fd0cfcac1cfcf9c58d280ec3f01e7d304a030eaac189cc83606048a63777"
-        },
-        {
-            "date": 1692720390531,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-22-08-22-error.log",
-            "hash": "3b3871f7444a38465f06155d55dfb6465c980b332a33ccdc66d627750f702c5e"
-        },
-        {
-            "date": 1692727310067,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-23-08-00-error.log",
-            "hash": "4beb95f5ee28e5db91158c2fa5dd494c7e5e5d75f457114bdaabc1899fb8f234"
-        },
-        {
-            "date": 1692773044414,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-23-08-12-error.log",
-            "hash": "6a187a8e34ec63b342f46c662373e522f49578d50cf703ee8660aa71213ea43b"
-        },
-        {
             "date": 1692900880480,
             "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-25-08-00-error.log",
             "hash": "8ee7626e17f2a3f890144d11feaacaed9b56389d7092ed7c7515bac3ec048d1d"
@@ -94,6 +44,11 @@
             "date": 1693328405162,
             "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-29-08-23-error.log",
             "hash": "e6be30fc5302e54408610db2112a5c6b3e443fd6d7d225ed7b460002e221ebb8"
+        },
+        {
+            "date": 1694019911339,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-06-09-23-error.log",
+            "hash": "158dfaedc4780efbee0b905b17232504081056ba284f4da6f93bf682f1ea518d"
         }
     ],
     "hashType": "sha256"
