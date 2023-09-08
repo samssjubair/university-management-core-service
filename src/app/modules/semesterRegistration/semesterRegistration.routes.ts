@@ -2,8 +2,8 @@ import express from 'express';
 import { ENUM_USER_ROLE } from '../../../enums/user';
 import auth from '../../middlewares/auth';
 import validateRequest from '../../middlewares/validateRequest';
-import { SemesterRegistrationValidation } from './semesterRegistraion.validations';
 import { SemesterRegistrationController } from './semesterRegistration.controller';
+import { SemesterRegistrationValidation } from './semesterRegistration.validations';
 
 const router = express.Router();
 router.get(

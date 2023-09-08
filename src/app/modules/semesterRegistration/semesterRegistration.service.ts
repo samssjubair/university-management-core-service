@@ -21,7 +21,7 @@ import {
   semesterRegistrationRelationalFields,
   semesterRegistrationRelationalFieldsMapper,
   semesterRegistrationSearchableFields,
-} from './semesterRegistraion.constants';
+} from './semesterRegistration.constants';
 import {
   IEnrollCoursePayload,
   ISemesterRegistrationFilterRequest,
