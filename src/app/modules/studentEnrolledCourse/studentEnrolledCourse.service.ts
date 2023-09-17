@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
     Prisma,
     StudentEnrolledCourse,
+    StudentEnrolledCourseMark,
     StudentEnrolledCourseStatus,
 } from '@prisma/client';
 import httpStatus from 'http-status';
@@ -9,6 +11,7 @@ import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import prisma from '../../../shared/prisma';
+import { IStudentEnrolledCourseMarkFilterRequest } from '../studentEnrolledCourseMark/studentEnrolledCourseMark.interface';
 import {
     studentEnrolledCourseRelationalFields,
     studentEnrolledCourseRelationalFieldsMapper,
@@ -191,10 +194,61 @@ const deleteByIdFromDB = async (id: string): Promise<StudentEnrolledCourse> => {
   return result;
 };
 
+const getMyCourseMarks = async (
+  filters: IStudentEnrolledCourseMarkFilterRequest,
+  options: IPaginationOptions,
+  authUser: any
+): Promise<IGenericResponse<StudentEnrolledCourseMark[]>> => {
+  const { limit, page } = paginationHelpers.calculatePagination(options);
+
+  const student = await prisma.student.findFirst({
+    where: {
+      studentId: authUser.id,
+    },
+  });
+
+  if (!student) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Student not found');
+  }
+
+  const marks = await prisma.studentEnrolledCourseMark.findMany({
+    where: {
+      student: {
+        id: student.id,
+      },
+      academicSemester: {
+        id: filters.academicSemesterId,
+      },
+      studentEnrolledCourse: {
+        course: {
+          id: filters.courseId,
+        },
+      },
+    },
+    include: {
+      studentEnrolledCourse: {
+        include: {
+          course: true,
+        },
+      },
+    },
+  });
+
+  return {
+    meta: {
+      total: marks.length,
+      page,
+      limit,
+    },
+    data: marks,
+  };
+};
+
 export const StudentEnrolledCourseService = {
   insertIntoDB,
   getAllFromDB,
   getByIdFromDB,
   updateOneInDB,
   deleteByIdFromDB,
+    getMyCourseMarks,
 };

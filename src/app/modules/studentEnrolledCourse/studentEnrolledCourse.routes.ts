@@ -2,6 +2,8 @@ import express from 'express';
 import { ENUM_USER_ROLE } from '../../../enums/user';
 import auth from '../../middlewares/auth';
 import validateRequest from '../../middlewares/validateRequest';
+import { StudentEnrolledCourseMarkConroller } from '../studentEnrolledCourseMark/studentEnrolledCourseMark.controller';
+import { StudentEnrolledCourseMarkValidation } from '../studentEnrolledCourseMark/studentEnrolledCourseMark.validations';
 import { StudentEnrolledCourseController } from './studentEnrolledCourse.controller';
 import { StudentEnrolledCourseValidation } from './studentEnrolledCourse.validations';
 
@@ -29,6 +31,25 @@ router.delete(
   '/:id',
   auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
   StudentEnrolledCourseController.deleteByIdFromDB
+);
+
+router.get(
+  '/my-marks',
+  auth(ENUM_USER_ROLE.STUDENT),
+  StudentEnrolledCourseMarkConroller.getMyCourseMarks
+);
+
+router.patch(
+  '/update-marks',
+  auth(ENUM_USER_ROLE.ADMIN, ENUM_USER_ROLE.FACULTY),
+  validateRequest(StudentEnrolledCourseMarkValidation.updateStudentMarks),
+  StudentEnrolledCourseMarkConroller.updateStudentMarks
+);
+router.patch(
+  '/update-final-marks',
+  auth(ENUM_USER_ROLE.ADMIN, ENUM_USER_ROLE.FACULTY),
+  validateRequest(StudentEnrolledCourseMarkValidation.updateStudentMarks),
+  StudentEnrolledCourseMarkConroller.updateFinalMarks
 );
 
 export const studentEnrolledCourseRoutes = router;
