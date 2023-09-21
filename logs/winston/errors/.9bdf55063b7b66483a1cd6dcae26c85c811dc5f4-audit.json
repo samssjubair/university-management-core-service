@@ -6,11 +6,6 @@
     "auditLog": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/.9bdf55063b7b66483a1cd6dcae26c85c811dc5f4-audit.json",
     "files": [
         {
-            "date": 1694019911339,
-            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-06-09-23-error.log",
-            "hash": "158dfaedc4780efbee0b905b17232504081056ba284f4da6f93bf682f1ea518d"
-        },
-        {
             "date": 1694181711823,
             "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-08-09-20-error.log",
             "hash": "e895d8c2f98f85db5180fee2451e42b225e39fbe2f8f2a4dfd00e86724e234e3"
@@ -64,6 +59,16 @@
             "date": 1695146796032,
             "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-20-09-00-error.log",
             "hash": "f023d8c2fcef5397f119959a248dc1733ffd436b904bcbf3c04ea48dfc079dcc"
+        },
+        {
+            "date": 1695282977128,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-21-09-13-error.log",
+            "hash": "a3fa31ec484f8c1c23b92e7cd22b516ab73b9ab18ca70a6cf166e3a11134a30a"
+        },
+        {
+            "date": 1695283221466,
+            "name": "/Users/samssjubair/Documents/PH level-2/university-management-core-service-starter/logs/winston/errors/phu-2023-21-09-14-error.log",
+            "hash": "5b469dfc15476d03573c5e930f2de8bd4eec3ee34a1c2081c98a1f7bcb6c4fd9"
         }
     ],
     "hashType": "sha256"

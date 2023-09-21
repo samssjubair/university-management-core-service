@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Course,
   OfferedCourse,
@@ -660,5 +661,4 @@ export const SemesterRegistrationService = {
   getMyRegistration,
   startNewSemester,
   getMySemesterRegCouses,
-  //1
 };

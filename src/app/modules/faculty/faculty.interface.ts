@@ -15,3 +15,26 @@ export type IFacultyMyCourseStudentsRequest = {
   courseId?: string | undefined;
   offeredCourseSectionId?: string | undefined;
 };
+
+export type FacultyCreatedEvent = {
+  id: string;
+  name: {
+    firstName: string;
+    lastName: string;
+    middleName?: string;
+  };
+  dateOfBirth: string;
+  gender: string;
+  bloodGroup: string;
+  designation: string;
+  email: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  contactNo: any;
+  profileImage: string;
+  academicFaculty: {
+    syncId: string;
+  };
+  academicDepartment: {
+    syncId: string;
+  };
+};
