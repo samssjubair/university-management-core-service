@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { AcademicSemester, Prisma } from "@prisma/client";
 import httpStatus from "http-status";
 import ApiError from "../../../errors/ApiError";
@@ -7,7 +8,12 @@ import { IPaginationOptions } from "../../../interfaces/pagination";
 import prisma from "../../../shared/prisma";
 import { RedisClient } from "../../../shared/redis";
 import { IAcademicSemesterFilter } from "./academicSemester.interface";
-import { EVENT_ACADEMIC_SEMESTER_CREATED, academicSemesterSearchableFields, academicSemesterTitleCodeMapper } from "./acadmicSemester.constant";
+import {
+  AcademicSemesterSearchAbleFields,
+  EVENT_ACADEMIC_SEMESTER_CREATED,
+  EVENT_ACADEMIC_SEMESTER_DELETED,
+  academicSemesterTitleCodeMapper,
+} from './acadmicSemester.constant';
 
 
 const insertIntoDB = async (
@@ -42,13 +48,13 @@ const getAllSemesters = async (filters: IAcademicSemesterFilter,options: IPagina
 
     if(searchTerms){
         andCondition.push({
-            OR: academicSemesterSearchableFields.map((key)=>({
-                [key]:{
-                    contains: searchTerms,
-                    mode: 'insensitive'
-                }
-            }))
-        })
+          OR: AcademicSemesterSearchAbleFields.map(key => ({
+            [key]: {
+              contains: searchTerms,
+              mode: 'insensitive',
+            },
+          })),
+        });
     }
 
     if(Object.keys(filterData).length){
@@ -117,6 +123,12 @@ const deleteByIdFromDB = async (id: string): Promise<AcademicSemester> => {
       id,
     },
   });
+  if (result) {
+    await RedisClient.publish(
+      EVENT_ACADEMIC_SEMESTER_DELETED,
+      JSON.stringify(result)
+    );
+  }
   return result;
 };
 

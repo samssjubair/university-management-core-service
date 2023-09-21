@@ -18,7 +18,6 @@ router.get(
   auth(ENUM_USER_ROLE.STUDENT),
   SemesterRegistrationController.getMySemesterRegCouses
 );
-router.get('/:id', SemesterRegistrationController.getByIdFromDB);
 
 router.post(
   '/enroll-into-course',
@@ -26,6 +25,11 @@ router.post(
   auth(ENUM_USER_ROLE.STUDENT),
   SemesterRegistrationController.enrollIntoCourse
 );
+
+router.get('/:id', SemesterRegistrationController.getByIdFromDB);
+
+
+
 router.post(
   '/start-registration',
   auth(ENUM_USER_ROLE.STUDENT),

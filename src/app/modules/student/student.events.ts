@@ -8,11 +8,11 @@ const initStudentEvents = () => {
     await StudentService.createStudentFromEvent(data);
   });
 
-  RedisClient.subscribe(EVENT_STUDENT_UPDATED, async (e: string) => {
-    const data = JSON.parse(e);
+   RedisClient.subscribe(EVENT_STUDENT_UPDATED, async (e: string) => {
+     const data = JSON.parse(e);
 
-    await StudentService.updateStudentFromEvent(data);
-  });
+     await StudentService.updateStudentFromEvent(data);
+   });
 };
 
 export default initStudentEvents;
